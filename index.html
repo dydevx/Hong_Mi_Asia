@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hong Mi Asia Cuisine in Iffezheim. Speisekarte, Öffnungszeiten und WhatsApp Bestellung."
+    />
+    <title>Hong Mi Asia Cuisine | Iffezheim</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Hong Mi Asia Cuisine Startseite">
+        <img class="brand__logo" src="assets/logo-mark.webp" alt="Hong Mi Asia Cuisine" />
+        <span class="brand__text">
+          <strong>Hong Mi</strong>
+          <small>Asia Cuisine</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Hauptnavigation">
+        <a href="#speisekarte">Speisekarte</a>
+        <a href="#bestellen">Bestellen</a>
+        <a href="#zeiten">Öffnungszeiten</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <a class="header-action" href="https://wa.me/4915115555883" target="_blank" rel="noreferrer">
+        WhatsApp
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__inner">
+          <div class="hero__copy">
+            <img class="hero__mark" src="assets/logo-mark.webp" alt="" aria-hidden="true" />
+            <p class="eyebrow">Asia Cuisine in Iffezheim</p>
+            <h1 id="hero-title">
+              <span>Hong Mi</span>
+              <span>Asia Cuisine</span>
+            </h1>
+            <p class="hero__lead">
+              Frische asiatische Küche, Sushi und warme Spezialitäten zum Genießen
+              vor Ort oder zum Mitnehmen.
+            </p>
+            <div class="hero__actions" aria-label="Schnellaktionen">
+              <a class="button button--primary" href="#bestellen">Bestellung starten</a>
+              <a class="button button--ghost" href="#speisekarte">Speisekarte ansehen</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="info-ribbon" aria-label="Kurzinfo">
+        <article>
+          <span>Heute</span>
+          <strong id="statusText">Öffnungszeiten werden geladen</strong>
+          <small id="todayHours">Hong Mi Asia Cuisine</small>
+        </article>
+        <article>
+          <span>Adresse</span>
+          <strong>
+            <a href="https://maps.app.goo.gl/YVimAtWhAx2BPrCG6" target="_blank" rel="noreferrer">Mittelweg 20</a>
+          </strong>
+          <small>76473 Iffezheim, Deutschland</small>
+        </article>
+        <article>
+          <span>Telefon</span>
+          <strong><a href="tel:+4972291869388">07229 - 186 93 88</a></strong>
+          <small>Reservierung und Rückfragen</small>
+        </article>
+      </section>
+
+      <section class="menu-section" id="speisekarte" aria-labelledby="menu-title">
+        <div class="section-heading section-heading--center">
+          <p class="eyebrow">Speisekarte</p>
+          <h2 id="menu-title">Blättern Sie durch unser Menü</h2>
+          <p>
+            Die digitale Karte ist Seite für Seite inszeniert, ruhig, klar und
+            angenehm lesbar.
+          </p>
+        </div>
+
+        <div class="menu-book" id="menuBook">
+          <div class="menu-book__topline">
+            <span>Hong Mi Asia Cuisine</span>
+            <strong id="menuPageLabel">Seite 1 von 24</strong>
+            <a href="Hong%20Mi/MEN%C3%9C_web.pdf" target="_blank" rel="noreferrer">PDF öffnen</a>
+          </div>
+
+          <div class="menu-book__stage" aria-live="polite">
+            <button class="page-hotspot page-hotspot--prev" type="button" data-menu-prev aria-label="Vorherige Seite">
+              ‹
+            </button>
+            <img
+              id="menuPageImage"
+              src="assets/menu/page-01.webp"
+              alt="Speisekarte Seite 1"
+              width="1317"
+              height="1317"
+            />
+            <button class="page-hotspot page-hotspot--next" type="button" data-menu-next aria-label="Nächste Seite">
+              ›
+            </button>
+          </div>
+
+          <div class="menu-book__controls">
+            <button class="book-button" type="button" data-menu-prev>
+              <span aria-hidden="true">←</span>
+              Zurück
+            </button>
+            <label class="page-select">
+              Seite
+              <input id="menuPageInput" type="number" min="1" max="24" value="1" inputmode="numeric" />
+            </label>
+            <button class="book-button book-button--next" type="button" data-menu-next>
+              Weiter
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-section" id="bestellen" aria-labelledby="order-title">
+        <div class="section-heading">
+          <p class="eyebrow">Bestellen</p>
+          <h2 id="order-title">Direkt per WhatsApp vorbestellen</h2>
+          <p>
+            Ihre Auswahl wird als klare Nachricht vorbereitet, damit die Vorbestellung
+            schnell und unkompliziert bei uns ankommt.
+          </p>
+          <div class="contact-pills">
+            <a href="https://wa.me/4915115555883" target="_blank" rel="noreferrer">0151 - 155 55 883</a>
+            <a href="tel:+4972291869388">07229 - 186 93 88</a>
+          </div>
+        </div>
+
+        <form class="order-form" id="orderForm">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" placeholder="Ihr Name" />
+          </label>
+
+          <label>
+            Telefonnummer
+            <input type="tel" name="phone" autocomplete="tel" placeholder="Für Rückfragen" />
+          </label>
+
+          <label>
+            Abholzeit
+            <select name="pickup">
+              <option value="So bald wie möglich">So bald wie möglich</option>
+              <option value="Heute Mittag">Heute Mittag</option>
+              <option value="Heute Abend">Heute Abend</option>
+              <option value="Wunschtermin in den Hinweisen">Wunschtermin in den Hinweisen</option>
+            </select>
+          </label>
+
+          <label class="span-2">
+            Bestellung
+            <textarea
+              name="items"
+              rows="6"
+              required
+              placeholder="z. B. 2x Nr. 12, 1x Sushi Set, 1x gebratene Nudeln"
+            ></textarea>
+          </label>
+
+          <label class="span-2">
+            Hinweise
+            <textarea name="notes" rows="3" placeholder="Extras, Allergien oder gewünschte Abholzeit"></textarea>
+          </label>
+
+          <button class="button button--primary span-2" type="submit">
+            Bestellung über WhatsApp senden
+          </button>
+        </form>
+      </section>
+
+      <section class="visit-section" id="zeiten" aria-labelledby="visit-title">
+        <div class="hours-panel">
+          <p class="eyebrow">Öffnungszeiten</p>
+          <h2 id="visit-title">Willkommen in Iffezheim</h2>
+          <ul class="hours-list">
+            <li><span>Montag</span><strong>11:00 - 14:30 / 17:00 - 21:00</strong></li>
+            <li><span>Dienstag</span><strong>11:00 - 14:30 / 17:00 - 21:00</strong></li>
+            <li><span>Mittwoch</span><strong>Ruhetag</strong></li>
+            <li><span>Donnerstag</span><strong>11:00 - 14:30 / 17:00 - 21:00</strong></li>
+            <li><span>Freitag</span><strong>11:00 - 14:30 / 17:00 - 22:00</strong></li>
+            <li><span>Samstag</span><strong>16:30 - 22:00</strong></li>
+            <li><span>Sonntag</span><strong>12:00 - 21:00</strong></li>
+          </ul>
+        </div>
+
+        <div class="location-panel" id="kontakt">
+          <p class="eyebrow">Kontakt</p>
+          <h2>Hong Mi Asia Cuisine</h2>
+          <address>
+            <a href="https://maps.app.goo.gl/YVimAtWhAx2BPrCG6" target="_blank" rel="noreferrer">
+              Mittelweg 20<br />
+              76473 Iffezheim, Deutschland
+            </a>
+          </address>
+          <div class="contact-pills contact-pills--dark">
+            <a href="tel:+4972291869388">Anrufen</a>
+            <a href="https://wa.me/4915115555883" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a href="https://maps.app.goo.gl/YVimAtWhAx2BPrCG6" target="_blank" rel="noreferrer">Route</a>
+          </div>
+          <iframe
+            class="map"
+            title="Karte zu Hong Mi Asia Cuisine"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.062515534148!2d8.141360086390492!3d48.81886862956731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796e1bf90432267%3A0xadbcdf5b7c4fd6c5!2sHong%20Mi%20Asia!5e0!3m2!1svi!2s!4v1779805458424!5m2!1svi!2s"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__main">
+        <span>Hong Mi Asia Cuisine</span>
+        <a href="https://maps.app.goo.gl/YVimAtWhAx2BPrCG6" target="_blank" rel="noreferrer">
+          Mittelweg 20, 76473 Iffezheim
+        </a>
+        <a href="https://wa.me/4915115555883" target="_blank" rel="noreferrer">WhatsApp Bestellung</a>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© 2026 All Rights Reserved</span>
+        <span>Designed by Hoangcaster</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
