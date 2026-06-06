@@ -8,6 +8,7 @@
       content="Hong Mi Asia Cuisine in Iffezheim. Speisekarte, Öffnungszeiten und WhatsApp Bestellung."
     />
     <title>Hong Mi Asia Cuisine | Iffezheim</title>
+    <link rel="preload" as="image" href="assets/food/hero-sushi-set.jpeg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -27,6 +28,7 @@
       </button>
 
       <nav class="site-nav" id="siteNav" aria-label="Hauptnavigation">
+        <a href="#ueber-uns">Über uns</a>
         <a href="#speisekarte">Speisekarte</a>
         <a href="#bestellen">Bestellen</a>
         <a href="#zeiten">Öffnungszeiten</a>
@@ -57,7 +59,6 @@
               <a class="button button--ghost" href="#speisekarte">Speisekarte ansehen</a>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -79,6 +80,310 @@
           <strong><a href="tel:+4972291869388">07229 - 186 93 88</a></strong>
           <small>Reservierung und Rückfragen</small>
         </article>
+      </section>
+
+      <section class="about-section" id="ueber-uns" aria-labelledby="about-title">
+        <div class="about-media" aria-label="Eindrücke aus dem Restaurant">
+          <img
+            class="about-media__main"
+            src="assets/food/dining-room.jpeg"
+            alt="Heller Gastraum von Hong Mi Asia Cuisine"
+            width="1600"
+            height="1200"
+            loading="lazy"
+          />
+          <img
+            class="about-media__accent"
+            src="assets/food/restaurant-front.jpeg"
+            alt="Außenansicht von Hong Mi Asia Cuisine in Iffezheim"
+            width="1600"
+            height="1200"
+            loading="lazy"
+          />
+          <img
+            class="about-media__detail"
+            src="assets/food/counter.jpeg"
+            alt="Thekenbereich von Hong Mi Asia Cuisine"
+            width="1600"
+            height="1200"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="section-heading">
+          <p class="eyebrow">Über uns</p>
+          <h2 id="about-title">Frisch gekocht, herzlich serviert</h2>
+          <p>
+            Bei Hong Mi Asia Cuisine verbinden wir vertraute asiatische Klassiker
+            mit frischen Zutaten, sorgfältiger Zubereitung und einer ruhigen,
+            freundlichen Atmosphäre. Ob für die Mittagspause, einen entspannten
+            Abend oder die schnelle Abholung: Wir möchten, dass gutes Essen in
+            Iffezheim unkompliziert und angenehm bleibt.
+          </p>
+          <p>
+            Auf unserer Karte finden Sie aromatische Suppen, warme Wokgerichte,
+            knusprige Spezialitäten und Sushi, das frisch angerichtet wird. Unser
+            Team freut sich darauf, Sie vor Ort willkommen zu heißen oder Ihre
+            Lieblingsgerichte zum Mitnehmen vorzubereiten.
+          </p>
+          <ul class="about-highlights" aria-label="Spezialitäten">
+            <li>Sushi & Maki</li>
+            <li>Warme Asia-Gerichte</li>
+            <li>Abholung per WhatsApp</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="food-section" aria-labelledby="food-title">
+        <div class="section-heading section-heading--center">
+          <p class="eyebrow">Aus der Küche</p>
+          <h2 id="food-title">Echte Eindrücke von unseren Gerichten</h2>
+          <p>
+            Neue Fotos direkt aus dem Restaurant: frisch angerichtet, klar
+            fotografiert und näher an dem, was unsere Gäste vor Ort erwartet.
+          </p>
+        </div>
+
+        <div class="food-grid">
+          <figure class="food-card food-card--feature">
+            <img
+              src="assets/food/hero-sushi-set.jpeg"
+              alt="Sushi Auswahl mit Reis und Salat"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+            <figcaption>Sushi Auswahl</figcaption>
+          </figure>
+          <figure class="food-card">
+            <img
+              src="assets/food/crispy-chicken.jpeg"
+              alt="Knuspriges Hähnchen mit Salat"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+            <figcaption>Knusprige Spezialitäten</figcaption>
+          </figure>
+          <figure class="food-card food-card--soup">
+            <img
+              src="assets/food/pho-bowl.jpeg"
+              alt="Asiatische Suppe mit frischen Kräutern"
+              width="1200"
+              height="1600"
+              loading="lazy"
+            />
+            <figcaption>Aromatische Suppen</figcaption>
+          </figure>
+          <figure class="food-card">
+            <img
+              src="assets/food/coconut-curry.jpeg"
+              alt="Cremiges Curry mit Beilage"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+            <figcaption>Warme Currys</figcaption>
+          </figure>
+          <figure class="food-card">
+            <img
+              src="assets/food/salmon-sushi.jpeg"
+              alt="Sushi mit Lachs auf schwarzer Platte"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+            <figcaption>Lachs Sushi</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-heading">
+          <span>Alle Fotos aus dem Restaurant</span>
+          <strong>20 Bilder</strong>
+        </div>
+
+        <div class="full-gallery" aria-label="Alle aktuellen Fotos aus dem Restaurant">
+          <figure class="gallery-tile gallery-tile--large">
+            <img
+              src="assets/food/hero-sushi-set.jpeg"
+              alt="Sushi Auswahl mit Reis und Salat"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/food/crispy-chicken.jpeg"
+              alt="Knuspriges Hähnchen mit Salat"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile gallery-tile--portrait">
+            <img
+              src="assets/food/pho-bowl.jpeg"
+              alt="Asiatische Suppe mit frischen Kräutern"
+              width="1200"
+              height="1600"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/food/coconut-curry.jpeg"
+              alt="Cremiges Curry mit Beilage"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/food/salmon-sushi.jpeg"
+              alt="Sushi mit Lachs auf schwarzer Platte"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/food/red-curry.jpeg"
+              alt="Rotes Curry in einer Schale"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/food/fried-starters.jpeg"
+              alt="Vorspeisen auf schwarzer Platte"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/food/crispy-rolls.jpeg"
+              alt="Knusprige Rollen mit Salat"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile gallery-tile--portrait">
+            <img
+              src="assets/food/crispy-duck-plate.jpeg"
+              alt="Knusprige Ente auf einem Teller"
+              width="1200"
+              height="1600"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/food/crispy-duck-noodles.jpeg"
+              alt="Gebratene Nudeln mit knuspriger Ente"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile gallery-tile--portrait">
+            <img
+              src="assets/food/noodle-plate.jpeg"
+              alt="Gebratene Nudeln mit knuspriger Beilage"
+              width="1200"
+              height="1600"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/food/maki-detail.jpeg"
+              alt="Detailaufnahme einer Maki Rolle"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile gallery-tile--wide">
+            <img
+              src="assets/food/restaurant-front.jpeg"
+              alt="Außenansicht von Hong Mi Asia Cuisine"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile gallery-tile--wide">
+            <img
+              src="assets/food/restaurant-front-side.jpeg"
+              alt="Weitere Außenansicht von Hong Mi Asia Cuisine"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/food/restaurant-interior-front.jpeg"
+              alt="Innenraum mit Sitzplätzen"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/food/dining-room.jpeg"
+              alt="Heller Gastraum von Hong Mi Asia Cuisine"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/food/dining-room-entry.jpeg"
+              alt="Eingangsbereich und Sitzplätze im Restaurant"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/food/counter.jpeg"
+              alt="Thekenbereich von Hong Mi Asia Cuisine"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile">
+            <img
+              src="assets/food/counter-wide.jpeg"
+              alt="Breite Ansicht des Thekenbereichs"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-tile gallery-tile--portrait">
+            <img
+              src="assets/food/beer-glass.jpeg"
+              alt="Bierglas auf einem Tisch"
+              width="1200"
+              height="1600"
+              loading="lazy"
+            />
+          </figure>
+        </div>
       </section>
 
       <section class="menu-section" id="speisekarte" aria-labelledby="menu-title">
