@@ -50,15 +50,23 @@ function timeToMinutes(time) {
 }
 
 function getBerlinParts(date) {
-  const formatter = new Intl.DateTimeFormat("en-GB", {
+  const formatter = new Intl.DateTimeFormat("de-DE", {
     timeZone: "Europe/Berlin",
-    weekday: "short",
+    weekday: "long",
     hour: "2-digit",
     minute: "2-digit",
     hour12: false,
   });
   const parts = Object.fromEntries(formatter.formatToParts(date).map((part) => [part.type, part.value]));
-  const dayMap = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+  const dayMap = {
+    Sonntag: 0,
+    Montag: 1,
+    Dienstag: 2,
+    Mittwoch: 3,
+    Donnerstag: 4,
+    Freitag: 5,
+    Samstag: 6,
+  };
   const hour = Number(parts.hour) % 24;
 
   return {
@@ -226,7 +234,7 @@ if (orderForm) {
     const notes = String(formData.get("notes") || "").trim();
 
     const message = [
-      "Hallo Hong Mi Asia Cuisine,",
+      "Hallo Hong Mi,",
       "",
       "ich möchte gerne bestellen:",
       items,
